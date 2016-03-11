@@ -1,0 +1,58 @@
+allprojects {
+    repositories {
+        jcenter()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+        maven { url 'https://maven.fabric.io/public' }
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+    }
+}
+
+ext {
+    //Version Libraries
+    aptVersion = '4.0-SNAPSHOT'
+    androidAnnotationsVersion = '4.0-SNAPSHOT'
+    supportVersion = '23.2.0'
+    recyclerVersion = '23.2.0'
+    cardViewVersion = '23.2.0'
+    designVersion = '23.2.0'
+    picassoVersion = '2.5.2'
+    ottoVersion = '1.3.8'
+    okHttpVersion = '2.5.0'
+    okHttpUrlConnectionVersion = '2.5.0'
+    retrofitVersion = '1.9.0'
+    jacksonConverterVersion = '1.9.0'
+    crashlyticsVersion = '2.5.5'
+    viewPagerIndicatorVersion = '2.4.1@aar'
+
+    //Version Libraries Test
+    robolectricVersion = '3.0'
+    jUnitVersion = '4.12'
+    assertJVersion = '1.7.0'
+    mockitoVersion = '1.+'
+
+    //Presentation
+    dependencies = [
+            androidAnnotationsCompiler: "org.androidannotations:androidannotations:${aptVersion}",
+            androidAnnotations        : "org.androidannotations:androidannotations-api:${androidAnnotationsVersion}",
+            design                    : "com.android.support:design:${designVersion}",
+            recycler                  : "com.android.support:recyclerview-v7:${recyclerVersion}",
+            cardView                  : "com.android.support:cardview-v7:${cardViewVersion}",
+            retrofit                  : "com.squareup.retrofit:retrofit:${retrofitVersion}",
+            jacksonConverter          : "com.squareup.retrofit:converter-jackson:${jacksonConverterVersion}",
+            okHttp             : "com.squareup.okhttp:okhttp:${okHttpVersion}",
+            okHttpUrlConnection: "com.squareup.okhttp:okhttp-urlconnection:${okHttpUrlConnectionVersion}",
+            otto               : "com.squareup:otto:${ottoVersion}",
+            picasso            : "com.squareup.picasso:picasso:${picassoVersion}",
+            crashlytics        : "com.crashlytics.sdk.android:crashlytics:${crashlyticsVersion}",
+            viewPagerIndicator : "com.github.JakeWharton:ViewPagerIndicator:${viewPagerIndicatorVersion}"
+    ]
+
+    //Teste
+    testDependencies = [
+            jUnit      : "junit:junit:${jUnitVersion}",
+            assertJ    : "org.assertj:assertj-core:${assertJVersion}",
+            mockito    : "org.mockito:mockito-core:${mockitoVersion}",
+            robolectric: "org.robolectric:robolectric:${robolectricVersion}",
+    ]
+}
