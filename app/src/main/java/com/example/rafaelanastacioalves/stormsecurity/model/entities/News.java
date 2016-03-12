@@ -15,11 +15,11 @@ public class News implements Serializable {
         super();
     }
 
-    public List<New> getAthletesList() {
+    public List<New> getNewsList() {
         return news;
     }
 
-    public void setAthletesList(List<New> news) {
+    public void setNewsList(List<New> news) {
         this.news = news;
     }
 }
