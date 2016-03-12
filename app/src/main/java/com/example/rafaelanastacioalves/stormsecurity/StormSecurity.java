@@ -9,4 +9,5 @@ import org.androidannotations.annotations.EApplication;
  */
 @EApplication
 public class StormSecurity extends Application {
+
 }
