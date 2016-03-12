@@ -4,9 +4,7 @@ import org.androidannotations.annotations.EBean;
 
 import retrofit.RequestInterceptor;
 
-/**
- * Created by bruna.esteves on 28/09/15.
- */
+
 @EBean
 public class WebServiceHeaders implements RequestInterceptor {
 //    @Bean(SessionRepositoryDiskImpl.class)

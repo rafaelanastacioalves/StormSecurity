@@ -13,7 +13,7 @@ import retrofit.http.GET;
 public interface WebServiceApi {
     //=================================== GET ===================================//
     // === Partial === //
-    @GET("/auth/time")
+    @GET("/news")
     void getMyTeam(Callback<News> response);
 
 

@@ -1,8 +1,6 @@
 package com.example.rafaelanastacioalves.stormsecurity.model.webservice;
 
 
-import android.app.Application;
-
 import com.example.rafaelanastacioalves.stormsecurity.StormSecurity_;
 import com.example.rafaelanastacioalves.stormsecurity.model.webservice.interfaces.WebServiceApi;
 import com.example.rafaelanastacioalves.stormsecurity.model.webservice.interfaces.WebServiceManager;
@@ -12,8 +10,6 @@ import com.squareup.okhttp.OkHttpClient;
 import org.androidannotations.annotations.AfterInject;
 import org.androidannotations.annotations.Bean;
 import org.androidannotations.annotations.EBean;
-
-
 
 import java.io.File;
 import java.util.concurrent.TimeUnit;
@@ -26,7 +22,7 @@ import retrofit.converter.JacksonConverter;
 public class WebServiceManagerImpl implements WebServiceManager {
     private static final int DISK_CACHE_SIZE = 50 * 1024 * 1024;
     private static final String CACHE_NAME = "HTTP";
-    private static final String SERVER_URL = "";
+    private static final String SERVER_URL = "http://private-26a84-stormsecurity2.apiary-mock.com";
     RestAdapter.LogLevel RETROFIT_LOG_LEVEL = RestAdapter.LogLevel.FULL;
 
     @Bean
