@@ -14,7 +14,7 @@ public interface WebServiceApi {
     //=================================== GET ===================================//
     // === Partial === //
     @GET("/news")
-    void getMyTeam(Callback<News> response);
+    void getNews(Callback<News> response);
 
 
 }
