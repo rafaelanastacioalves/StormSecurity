@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.rafaelanastacioalves.stormsecurity">
+    <uses-permission android:name="android.permission.INTERNET" />
+
 
     <application
         android:name=".StormSecurity_"
@@ -8,7 +11,9 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:title="@string/app_name"
+        android:theme="@style/AppTheme"
+        tools:replace="android:theme, android:title, android:label">
         <activity android:name=".presentation.views.activity.NewsActivity_">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
