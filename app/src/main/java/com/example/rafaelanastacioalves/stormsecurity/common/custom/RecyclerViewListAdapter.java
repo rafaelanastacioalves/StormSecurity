@@ -6,9 +6,7 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by bruno.vieira on 13/11/15.
- */
+
 public abstract class RecyclerViewListAdapter<VH extends RecyclerView.ViewHolder, I, L> extends RecyclerView.Adapter<VH> {
     private List<I> items = new ArrayList<>();
     private L clickListener;
