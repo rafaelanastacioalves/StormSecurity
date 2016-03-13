@@ -4,5 +4,5 @@ package com.example.rafaelanastacioalves.stormsecurity.presentation.views.activi
  * Created by rafaelanastacioalves on 09/03/16.
  */
 public interface NewsView {
-    void show();
+
 }

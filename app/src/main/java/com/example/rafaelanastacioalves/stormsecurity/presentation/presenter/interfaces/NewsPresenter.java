@@ -15,7 +15,7 @@ import java.util.List;
  */
 public interface NewsPresenter {
 
-    void attachView(@NonNull NewsView marketOpenListWithTeamView);
+    void attachView(@NonNull NewsView newsView);
     void attachView(@NonNull NewsListView newsListView);
     void loadNews();
 

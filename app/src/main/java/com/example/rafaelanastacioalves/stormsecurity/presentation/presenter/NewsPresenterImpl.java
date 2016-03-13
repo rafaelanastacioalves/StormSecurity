@@ -32,8 +32,8 @@ public class NewsPresenterImpl implements NewsPresenter{
     @Bean(BusProviderImpl.class)
     BusProvider busProvider;
     @Override
-    public void attachView(@NonNull NewsView marketOpenListWithTeamView) {
-        this.newsView = marketOpenListWithTeamView;
+    public void attachView(@NonNull NewsView newsView) {
+        this.newsView = newsView;
 
     }
 
